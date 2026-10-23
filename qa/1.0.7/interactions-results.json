@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "pageErrors": [],
+  "checks": [
+    "hover-to-press feedback before release without action commit (normal)",
+    "exact dialog copy and role/focus trap/inert background (normal)",
+    "hover-to-press feedback before release without action commit (reduced)",
+    "exact dialog copy and role/focus trap/inert background (reduced)"
+  ]
+}

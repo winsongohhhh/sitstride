@@ -1,0 +1,14 @@
+node_modules/
+release/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+Thumbs.db
+npm-debug.log*

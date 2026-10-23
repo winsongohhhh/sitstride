@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "pageErrors": [],
+  "states": 5,
+  "checks": [
+    "250-step standing copy",
+    "paused copy",
+    "settings labels/note",
+    "single-line/no clipping at 320x480"
+  ]
+}

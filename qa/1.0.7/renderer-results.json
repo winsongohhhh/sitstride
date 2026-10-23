@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "pageErrors": [],
+  "checks": [
+    "delayed hidden and immediate focus/background restore (normal)",
+    "no keyframe animations; transition properties verified (normal opacity+transform)",
+    "rapid close/reopen reversal and delayed-hide cancellation (normal)",
+    "delayed hidden and immediate focus/background restore (reduced)",
+    "no keyframe animations; transition properties verified (reduced opacity-only)",
+    "rapid close/reopen reversal and delayed-hide cancellation (reduced)"
+  ]
+}

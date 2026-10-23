@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "pageErrors": [],
+  "matrix": [
+    {
+      "appReduceMotion": false,
+      "osReduceMotion": false,
+      "effectiveReduceMotion": false,
+      "savedForm": true,
+      "opacityOnlyWhenReduced": true,
+      "immediatePressBeforeCommit": true,
+      "targets44pxInViewport": true,
+      "keyboardFocusTrapAndRestoration": true,
+      "liveOSAndSavedUpdates": true
+    },
+    {
+      "appReduceMotion": false,
+      "osReduceMotion": true,
+      "effectiveReduceMotion": true,
+      "savedForm": true,
+      "opacityOnlyWhenReduced": true,
+      "immediatePressBeforeCommit": true,
+      "targets44pxInViewport": true,
+      "keyboardFocusTrapAndRestoration": true,
+      "liveOSAndSavedUpdates": true
+    },
+    {
+      "appReduceMotion": true,
+      "osReduceMotion": false,
+      "effectiveReduceMotion": true,
+      "savedForm": true,
+      "opacityOnlyWhenReduced": true,
+      "immediatePressBeforeCommit": true,
+      "targets44pxInViewport": true,
+      "keyboardFocusTrapAndRestoration": true,
+      "liveOSAndSavedUpdates": true
+    },
+    {
+      "appReduceMotion": true,
+      "osReduceMotion": true,
+      "effectiveReduceMotion": true,
+      "savedForm": true,
+      "opacityOnlyWhenReduced": true,
+      "immediatePressBeforeCommit": true,
+      "targets44pxInViewport": true,
+      "keyboardFocusTrapAndRestoration": true,
+      "liveOSAndSavedUpdates": true
+    }
+  ],
+  "targetScope": "44px close-dialog choices; legacy compact controls unchanged",
+  "nativeWindowsTested": false
+}

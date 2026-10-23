@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "pageErrors": [],
+  "layouts": [
+    {
+      "state": "sitting",
+      "scroll": 478,
+      "client": 478,
+      "overflow": false,
+      "footer": 467
+    },
+    {
+      "state": "standing",
+      "scroll": 478,
+      "client": 478,
+      "overflow": false,
+      "footer": 467
+    },
+    {
+      "state": "reminder",
+      "scroll": 478,
+      "client": 478,
+      "overflow": false,
+      "footer": 467
+    },
+    {
+      "state": "settings",
+      "scroll": 478,
+      "client": 478,
+      "overflow": false,
+      "footer": 467
+    }
+  ],
+  "shortScreen": "280x420 settings reachable"
+}

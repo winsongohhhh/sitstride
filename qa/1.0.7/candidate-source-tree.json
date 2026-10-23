@@ -1,0 +1,14 @@
+{
+  "app/LICENSE": "d3b4b9d5648b1e3db1b029c9f90cd26e169a0e43be58e0f2e09c31323b94e9ef",
+  "app/assets/icon.ico": "4386edfa04461ce08354130a060f27edc9bdd3be5039b30597dc59862c1ae123",
+  "app/assets/icon.png": "3c705b5e99b7685fefde6e513df87a8cd85e782d759a6440e729eda3b77f0a3b",
+  "app/assets/icon.svg": "73e8eab9ee04148fe2655c1a80b10e3a8c26f296b95475be6df686041cde4631",
+  "app/assets/tray.png": "dd627ac68ae42b41612527954d91eae76d732160cb47565cc2bbc0c71bef3f51",
+  "app/assets/tray.svg": "6f30334057fa2907c981e103055f32380e55c42c016dbc2a0d3b40679cc2289f",
+  "app/main.js": "81a8b11417ae2c417b3482f58ffce74374b80b69039d889054f4c2f774198867",
+  "app/preload.js": "12bec2ed337a2cec89e81588bc39b19b802acbdbcdfd4766099657c5de08447c",
+  "app/renderer/index.html": "27b8347398003378832bab8b7558c07393a48e7393454ef8cd8b02b9e11f8488",
+  "app/renderer/renderer.js": "1e7a564b76e25f3002fab5d18a718372175ee2e7b6bc9f7a7e8fa2336c8599cb",
+  "app/renderer/style.css": "f9643f44b98551e01bc9f81ae051a2c4510d629699ec8bbe7d6ebe0f693d5651",
+  "app/timer.js": "963ed35131ece97a6b4fc11d6354c0246efce5672807b5ca1bef7cd87c4a77cf"
+}

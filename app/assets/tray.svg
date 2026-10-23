@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="SitStride seated mascot and chair tray icon">
+  <g transform="translate(-75 -78) scale(1.5)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M76 131 L85 192 L145 192 M90 195 L86 232 M140 195 L145 232" fill="none" stroke="#4a7b52" stroke-width="12"/>
+    <path d="M123 178 L184 178 L184 229 L205 229" fill="none" stroke="#08ce7d" stroke-width="28"/>
+    <path d="M111 131 L123 178" fill="none" stroke="#08ce7d" stroke-width="37"/>
+    <path d="M111 131 L136 162 L165 168" fill="none" stroke="#43df96" stroke-width="13"/>
+    <circle cx="105" cy="91" r="22" fill="#08ce7d"/>
+  </g>
+</svg>

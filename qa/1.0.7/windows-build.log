@@ -1,0 +1,22 @@
+
+> sitstride-desktop@1.0.7 dist:win:x64
+> electron-builder --win nsis --x64
+
+  • electron-builder  version=26.15.3 os=6.18.38+
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=45.0.0 arch=x64 buildFromSource=false workspaceRoot=/workspace/standup projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=45.0.0 appOutDir=release/1.0.7/win-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=/workspace/standup/release/1.0.7/win-unpacked
+  • searching for node modules  pm=npm searchDir=/workspace/standup
+  • searching for node modules  pm=traversal searchDir=/workspace/standup
+  • using manual traversal of node_modules to build dependency tree
+  • no node modules returned while searching directories  searchDirectories=[""]
+  • updating asar integrity executable resource  executablePath=release/1.0.7/win-unpacked/SitStride.exe
+  • file signing skipped via signExecutable configuration  file=release/1.0.7/win-unpacked/SitStride.exe
+  • building        target=nsis file=release/1.0.7/SitStride-Setup-1.0.7-x64.exe archs=x64 oneClick=false perMachine=false
+  • file signing skipped via signExecutable configuration  file=release/1.0.7/SitStride-Setup-1.0.7-x64.__uninstaller.exe
+  • file signing skipped via signExecutable configuration  file=release/1.0.7/SitStride-Setup-1.0.7-x64.exe
+  • building block map  blockMapFile=release/1.0.7/SitStride-Setup-1.0.7-x64.exe.blockmap

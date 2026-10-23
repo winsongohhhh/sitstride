@@ -1,0 +1,16 @@
+
+> sitstride-desktop@1.0.7 pack:linux
+> electron-builder --linux dir --x64
+
+  • electron-builder  version=26.15.3 os=6.18.38+
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=45.0.0 arch=x64 buildFromSource=false workspaceRoot=/workspace/standup projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=linux arch=x64 electron=45.0.0 appOutDir=release/1.0.7/linux-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=/workspace/standup/release/1.0.7/linux-unpacked
+  • searching for node modules  pm=npm searchDir=/workspace/standup
+  • searching for node modules  pm=traversal searchDir=/workspace/standup
+  • using manual traversal of node_modules to build dependency tree
+  • no node modules returned while searching directories  searchDirectories=[""]

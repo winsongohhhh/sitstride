@@ -1,0 +1,33 @@
+
+> sitstride-desktop@1.0.7 test
+> node --test tests/*.test.js
+
+✔ main-process harness loads this package’s actual main source (2.102679ms)
+✔ main process supports minimize-to-tray without pausing the timer (20.335664ms)
+✔ due countdown restores a minimized window and shows the popup once (4.147853ms)
+✔ native close requests a choice without hiding, pausing, or quitting (3.437315ms)
+✔ X IPC requests the dialog and Keep hides while timer and reminders continue (3.441553ms)
+✔ Quit action stops ticker and destroys tray; shutdown is not intercepted (3.31951ms)
+✔ tray Quit menu item requests the same clean shutdown (3.596102ms)
+✔ tray click hides and reopens without a close prompt (3.266346ms)
+✔ new close and quit IPC reject an untrusted sender (5.594704ms)
+✔ background ticker publishes countdown updates while hidden (3.586248ms)
+✔ defaults are 60 minutes sitting and 5 minutes standing (2.309926ms)
+✔ sitting deadline requires user action, even after a long sleep (0.679703ms)
+✔ standing deadline waits for Back to sitting, then starts a fresh hour (0.385072ms)
+✔ early sitting is allowed without counting a completed break (0.283574ms)
+✔ pause preserves exact remaining time and resume continues it (0.320221ms)
+✔ snooze gives exactly five minutes only for a due sitting reminder (5.12412ms)
+✔ settings do not silently reset an active phase, but apply next phase (0.553663ms)
+✔ duplicate action clicks cannot reset the current phase (0.342041ms)
+✔ settings reject unsafe, missing, fractional and out-of-range values (0.899082ms)
+✔ snapshots cannot mutate stored settings (0.606052ms)
+✔ new app launch starts a fresh seated countdown, startup is opt-in (0.420029ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 158.778092

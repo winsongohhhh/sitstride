@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "platform": "Linux Electron under Xvfb with xfwm4",
+  "packagedAsar": true,
+  "realPreloadIPC": true,
+  "checks": [
+    "default 60/5 cycle",
+    "X opens close dialog",
+    "safe initial focus",
+    "Keep hides window",
+    "timer advances while hidden",
+    "reopen after Keep",
+    "Escape dismisses dialog",
+    "minimize silently hides with no pause",
+    "standing interval and 250 steps",
+    "return to 60-minute sitting",
+    "Quit exits process with code 0",
+    "saved app Reduce motion with OS off persists on disk and gives opacity-only dialog"
+  ],
+  "nativeWindowsTested": false
+}

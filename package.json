@@ -1,0 +1,64 @@
+{
+  "name": "sitstride-desktop",
+  "version": "1.0.7",
+  "description": "A gentle, animated sit-stand and walking reminder for the Windows system tray",
+  "author": "SitStride",
+  "license": "MIT",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.js",
+    "dist:win": "npm run dist:win:x64",
+    "pack:linux": "electron-builder --linux dir --x64",
+    "dist:win:x64": "electron-builder --win nsis --x64",
+    "dist:win:x86": "node -e \"console.error('Windows x86 is unavailable: Electron 45 does not publish ia32 binaries (removed in Electron 44). Use x64; a legacy Electron 43 build requires separate approval and QA.'); process.exit(1)\""
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "com.standup.desktop",
+    "productName": "SitStride",
+    "copyright": "Copyright \u00a9 2026 SitStride. Original script \u00a9 2026 Flora Wu.",
+    "asar": true,
+    "directories": {
+      "output": "release/1.0.7",
+      "buildResources": "app/assets"
+    },
+    "files": [
+      "app/**/*",
+      "package.json",
+      "!app/**/*.test.js",
+      "!app/**/*.tmp"
+    ],
+    "win": {
+      "icon": "app/assets/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "signAndEditExecutable": true,
+      "signExecutable": false,
+      "artifactName": "SitStride-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SitStride",
+      "installerIcon": "app/assets/icon.ico",
+      "uninstallerIcon": "app/assets/icon.ico",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true,
+      "license": "app/LICENSE"
+    }
+  }
+}

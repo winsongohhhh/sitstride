@@ -1,0 +1,315 @@
+{
+  "version": "1.0.7",
+  "passed": true,
+  "sourceIcons": [
+    {
+      "width": 16,
+      "height": 16,
+      "sha256": "9cdef69829176b630c833f2d22ec7e06f4a3c4c3adb01eaa2aee7cc181cc9665"
+    },
+    {
+      "width": 20,
+      "height": 20,
+      "sha256": "4682ff9853e452f7a0d1abf4873f5b13a3a333767c07dd43f7e5b7cca35b1763"
+    },
+    {
+      "width": 24,
+      "height": 24,
+      "sha256": "ad49f33f90faf202c1bb07f13afc2f6961e6d3223472be779b24662aa9537827"
+    },
+    {
+      "width": 32,
+      "height": 32,
+      "sha256": "744d41b9afef199572956af587cb5b0a0805e85b35b3f9098a6a660febf4320e"
+    },
+    {
+      "width": 40,
+      "height": 40,
+      "sha256": "792e4b109faaefc3edcee830d39e83b3bab378d8d45eff7bb6e9471f49ce8250"
+    },
+    {
+      "width": 48,
+      "height": 48,
+      "sha256": "3a491cd897bf2fbd60c4d8913ac4dcdb088a11f5f2512bb17160f8b1214d93b0"
+    },
+    {
+      "width": 64,
+      "height": 64,
+      "sha256": "6b681b3f766f91bbe6997c17f135dbb2969ee9e04a99bee32bcbbdaaff0d6d01"
+    },
+    {
+      "width": 128,
+      "height": 128,
+      "sha256": "01e13cd082fcefa7ab7834c4f67f6074d970b25a86cb24cffbe52774eee7f431"
+    },
+    {
+      "width": 256,
+      "height": 256,
+      "sha256": "a1dd44b37a6ae5e8b553466bd382d12693de003b7425d03703eb7fdb0a1a7f3d"
+    }
+  ],
+  "assets": {
+    "app/assets/icon.ico": "4386edfa04461ce08354130a060f27edc9bdd3be5039b30597dc59862c1ae123",
+    "app/assets/icon.png": "3c705b5e99b7685fefde6e513df87a8cd85e782d759a6440e729eda3b77f0a3b",
+    "app/assets/icon.svg": "73e8eab9ee04148fe2655c1a80b10e3a8c26f296b95475be6df686041cde4631",
+    "app/assets/tray.png": "dd627ac68ae42b41612527954d91eae76d732160cb47565cc2bbc0c71bef3f51",
+    "app/assets/tray.svg": "6f30334057fa2907c981e103055f32380e55c42c016dbc2a0d3b40679cc2289f"
+  },
+  "finalDesign": {
+    "app/LICENSE": "d3b4b9d5648b1e3db1b029c9f90cd26e169a0e43be58e0f2e09c31323b94e9ef",
+    "app/assets/icon.ico": "4386edfa04461ce08354130a060f27edc9bdd3be5039b30597dc59862c1ae123",
+    "app/assets/icon.png": "3c705b5e99b7685fefde6e513df87a8cd85e782d759a6440e729eda3b77f0a3b",
+    "app/assets/icon.svg": "73e8eab9ee04148fe2655c1a80b10e3a8c26f296b95475be6df686041cde4631",
+    "app/assets/tray.png": "dd627ac68ae42b41612527954d91eae76d732160cb47565cc2bbc0c71bef3f51",
+    "app/assets/tray.svg": "6f30334057fa2907c981e103055f32380e55c42c016dbc2a0d3b40679cc2289f",
+    "app/main.js": "81a8b11417ae2c417b3482f58ffce74374b80b69039d889054f4c2f774198867",
+    "app/preload.js": "12bec2ed337a2cec89e81588bc39b19b802acbdbcdfd4766099657c5de08447c",
+    "app/renderer/index.html": "27b8347398003378832bab8b7558c07393a48e7393454ef8cd8b02b9e11f8488",
+    "app/renderer/renderer.js": "1e7a564b76e25f3002fab5d18a718372175ee2e7b6bc9f7a7e8fa2336c8599cb",
+    "app/renderer/style.css": "f9643f44b98551e01bc9f81ae051a2c4510d629699ec8bbe7d6ebe0f693d5651",
+    "app/timer.js": "963ed35131ece97a6b4fc11d6354c0246efce5672807b5ca1bef7cd87c4a77cf"
+  },
+  "branding": {
+    "chairIncluded": true,
+    "clockInIcon": false,
+    "renderer": true,
+    "tray": true,
+    "installer": true,
+    "uninstaller": true,
+    "shortcutUsesAppExecutableIcon": true,
+    "shortcutNote": "Build configuration and embedded target icon verified; native Windows shortcut creation untested."
+  },
+  "windows": {
+    "x64": {
+      "app": {
+        "appFilesMatched": 12,
+        "metadataMatched": true,
+        "sha256": "4c822defccc1170d2c8dc3308368552004fc705dff3379ea3a2009ab73e0c43e",
+        "executable": {
+          "machine": "8664",
+          "unsigned": true,
+          "groups": [
+            {
+              "id": 1,
+              "lang": 1033,
+              "icons": [
+                {
+                  "width": 16,
+                  "height": 16,
+                  "sha256": "9cdef69829176b630c833f2d22ec7e06f4a3c4c3adb01eaa2aee7cc181cc9665"
+                },
+                {
+                  "width": 20,
+                  "height": 20,
+                  "sha256": "4682ff9853e452f7a0d1abf4873f5b13a3a333767c07dd43f7e5b7cca35b1763"
+                },
+                {
+                  "width": 24,
+                  "height": 24,
+                  "sha256": "ad49f33f90faf202c1bb07f13afc2f6961e6d3223472be779b24662aa9537827"
+                },
+                {
+                  "width": 32,
+                  "height": 32,
+                  "sha256": "744d41b9afef199572956af587cb5b0a0805e85b35b3f9098a6a660febf4320e"
+                },
+                {
+                  "width": 40,
+                  "height": 40,
+                  "sha256": "792e4b109faaefc3edcee830d39e83b3bab378d8d45eff7bb6e9471f49ce8250"
+                },
+                {
+                  "width": 48,
+                  "height": 48,
+                  "sha256": "3a491cd897bf2fbd60c4d8913ac4dcdb088a11f5f2512bb17160f8b1214d93b0"
+                },
+                {
+                  "width": 64,
+                  "height": 64,
+                  "sha256": "6b681b3f766f91bbe6997c17f135dbb2969ee9e04a99bee32bcbbdaaff0d6d01"
+                },
+                {
+                  "width": 128,
+                  "height": 128,
+                  "sha256": "01e13cd082fcefa7ab7834c4f67f6074d970b25a86cb24cffbe52774eee7f431"
+                },
+                {
+                  "width": 256,
+                  "height": 256,
+                  "sha256": "a1dd44b37a6ae5e8b553466bd382d12693de003b7425d03703eb7fdb0a1a7f3d"
+                }
+              ]
+            }
+          ],
+          "versions": [
+            {
+              "CompanyName": "SitStride",
+              "FileDescription": "SitStride",
+              "FileVersion": "1.0.7",
+              "InternalName": "SitStride",
+              "LegalCopyright": "Copyright © 2026 SitStride. Original script © 2026 Flora Wu.",
+              "OriginalFilename": "",
+              "ProductName": "SitStride",
+              "ProductVersion": "1.0.7.0",
+              "SquirrelAwareVersion": "1"
+            }
+          ],
+          "sha256": "1efe73b9955b4f596a267009b2e67fe86a99b9ed7e3d356f2b4dd9c8c57b2c45"
+        }
+      },
+      "installer": {
+        "machine": "14c",
+        "unsigned": true,
+        "groups": [
+          {
+            "id": 103,
+            "lang": 1033,
+            "icons": [
+              {
+                "width": 16,
+                "height": 16,
+                "sha256": "9cdef69829176b630c833f2d22ec7e06f4a3c4c3adb01eaa2aee7cc181cc9665"
+              },
+              {
+                "width": 20,
+                "height": 20,
+                "sha256": "4682ff9853e452f7a0d1abf4873f5b13a3a333767c07dd43f7e5b7cca35b1763"
+              },
+              {
+                "width": 24,
+                "height": 24,
+                "sha256": "ad49f33f90faf202c1bb07f13afc2f6961e6d3223472be779b24662aa9537827"
+              },
+              {
+                "width": 32,
+                "height": 32,
+                "sha256": "744d41b9afef199572956af587cb5b0a0805e85b35b3f9098a6a660febf4320e"
+              },
+              {
+                "width": 40,
+                "height": 40,
+                "sha256": "792e4b109faaefc3edcee830d39e83b3bab378d8d45eff7bb6e9471f49ce8250"
+              },
+              {
+                "width": 48,
+                "height": 48,
+                "sha256": "3a491cd897bf2fbd60c4d8913ac4dcdb088a11f5f2512bb17160f8b1214d93b0"
+              },
+              {
+                "width": 64,
+                "height": 64,
+                "sha256": "6b681b3f766f91bbe6997c17f135dbb2969ee9e04a99bee32bcbbdaaff0d6d01"
+              },
+              {
+                "width": 128,
+                "height": 128,
+                "sha256": "01e13cd082fcefa7ab7834c4f67f6074d970b25a86cb24cffbe52774eee7f431"
+              },
+              {
+                "width": 256,
+                "height": 256,
+                "sha256": "a1dd44b37a6ae5e8b553466bd382d12693de003b7425d03703eb7fdb0a1a7f3d"
+              }
+            ]
+          }
+        ],
+        "versions": [
+          {
+            "CompanyName": "SitStride",
+            "FileDescription": "A gentle, animated sit-stand and walking reminder for the Windows system tray",
+            "FileVersion": "1.0.7",
+            "LegalCopyright": "Copyright © 2026 SitStride. Original script © 2026 Flora Wu.",
+            "ProductName": "SitStride",
+            "ProductVersion": "1.0.7"
+          }
+        ],
+        "sha256": "08f2b7b0cfdce8f1665c7a6aa5e0e17eae43837ead5061b9ab41a0b0ffcfb42a"
+      },
+      "uninstaller": {
+        "machine": "14c",
+        "unsigned": true,
+        "groups": [
+          {
+            "id": 103,
+            "lang": 1033,
+            "icons": [
+              {
+                "width": 16,
+                "height": 16,
+                "sha256": "9cdef69829176b630c833f2d22ec7e06f4a3c4c3adb01eaa2aee7cc181cc9665"
+              },
+              {
+                "width": 20,
+                "height": 20,
+                "sha256": "4682ff9853e452f7a0d1abf4873f5b13a3a333767c07dd43f7e5b7cca35b1763"
+              },
+              {
+                "width": 24,
+                "height": 24,
+                "sha256": "ad49f33f90faf202c1bb07f13afc2f6961e6d3223472be779b24662aa9537827"
+              },
+              {
+                "width": 32,
+                "height": 32,
+                "sha256": "744d41b9afef199572956af587cb5b0a0805e85b35b3f9098a6a660febf4320e"
+              },
+              {
+                "width": 40,
+                "height": 40,
+                "sha256": "792e4b109faaefc3edcee830d39e83b3bab378d8d45eff7bb6e9471f49ce8250"
+              },
+              {
+                "width": 48,
+                "height": 48,
+                "sha256": "3a491cd897bf2fbd60c4d8913ac4dcdb088a11f5f2512bb17160f8b1214d93b0"
+              },
+              {
+                "width": 64,
+                "height": 64,
+                "sha256": "6b681b3f766f91bbe6997c17f135dbb2969ee9e04a99bee32bcbbdaaff0d6d01"
+              },
+              {
+                "width": 128,
+                "height": 128,
+                "sha256": "01e13cd082fcefa7ab7834c4f67f6074d970b25a86cb24cffbe52774eee7f431"
+              },
+              {
+                "width": 256,
+                "height": 256,
+                "sha256": "a1dd44b37a6ae5e8b553466bd382d12693de003b7425d03703eb7fdb0a1a7f3d"
+              }
+            ]
+          }
+        ],
+        "versions": [
+          {
+            "CompanyName": "SitStride",
+            "FileDescription": "A gentle, animated sit-stand and walking reminder for the Windows system tray",
+            "FileVersion": "1.0.7",
+            "LegalCopyright": "Copyright © 2026 SitStride. Original script © 2026 Flora Wu.",
+            "ProductName": "SitStride",
+            "ProductVersion": "1.0.7"
+          }
+        ],
+        "sha256": "20584ea403fb6fb0beb8016890fb51b31cbe9f5825364c40119055b8e18639bd"
+      },
+      "installerPayload": {
+        "appFilesMatched": 12,
+        "metadataMatched": true,
+        "sha256": "4c822defccc1170d2c8dc3308368552004fc705dff3379ea3a2009ab73e0c43e"
+      },
+      "fullPayloadFilesMatched": 73
+    },
+    "ia32": {
+      "available": false,
+      "reason": "Owner retained x64-only target; no x86 build attempted for this candidate."
+    }
+  },
+  "linux": {
+    "appFilesMatched": 12,
+    "metadataMatched": true,
+    "sha256": "4c822defccc1170d2c8dc3308368552004fc705dff3379ea3a2009ab73e0c43e"
+  },
+  "preservedPreviousArtifactsUnchanged": true,
+  "nativeWindowsTested": false
+}

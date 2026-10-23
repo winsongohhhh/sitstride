@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self';">
+  <title>SitStride reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand"><img class="brand-mark" src="../assets/icon.png" alt="" width="26" height="26"><span>SitStride</span></div>
+      <div class="window-controls">
+        <button class="icon-button" id="minimize-button" type="button" aria-label="Minimize SitStride to system tray" title="Minimize; timer keeps running">−</button>
+        <button class="icon-button" id="hide-button" type="button" aria-label="Close SitStride" title="Choose to keep running or quit">×</button>
+      </div>
+    </header>
+
+    <section id="error-banner" class="error-banner" role="alert" hidden></section>
+
+    <section id="home-view" class="view" aria-labelledby="status-heading">
+      <div class="hero">
+        <div class="mascot-wrap" aria-label="Animated SitStride mascot">
+          <svg class="mascot" viewBox="0 0 300 260" role="img" aria-labelledby="mascot-title mascot-desc">
+            <title id="mascot-title">SitStride mascot</title>
+            <desc id="mascot-desc">A friendly emerald person moving between a chair and standing pose beside a clock.</desc>
+            <g class="clock" aria-hidden="true"><circle cx="239" cy="45" r="25"></circle><path d="M239 31v15l10 7"></path><circle cx="239" cy="46" r="3"></circle></g>
+            <g class="chair" aria-hidden="true"><path d="M76 131 L85 192 L145 192 M90 195 L86 232 M140 195 L145 232"/></g>
+            <g class="person" id="person" aria-hidden="true">
+              <path id="mascot-leg" class="side-leg" d="M123 178 L184 178 L184 229 L205 229"></path>
+              <path id="mascot-torso" class="side-torso" d="M111 131 L123 178"></path>
+              <path id="mascot-arm" class="side-arm" d="M111 131 L136 162 L165 168"></path>
+              <circle id="mascot-head" class="head" cx="105" cy="91" r="22"></circle>
+            </g>
+          </svg>
+        </div>
+        <p class="eyebrow" id="status-heading">YOUR NEXT MOVE</p>
+        <h1 id="primary-heading" aria-live="polite">Time to stand</h1>
+        <p class="subheading" id="status-detail">Break time is coming up.</p>
+        <div class="countdown" id="countdown" aria-label="Time remaining">60:00</div>
+        <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+      </div>
+
+      <div class="actions">
+        <button class="primary-button" id="primary-action" type="button">Stand up</button>
+        <div class="secondary-actions">
+          <button class="text-button" id="pause-action" type="button">Pause</button>
+          <button class="text-button" id="snooze-action" type="button" hidden>Snooze 5 min</button>
+          <button class="text-button" id="settings-action" type="button">Settings</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="settings-view" class="view settings-view" aria-labelledby="settings-heading" hidden>
+      <div class="settings-heading-row"><div><p class="eyebrow">PREFERENCES</p><h1 id="settings-heading">Settings</h1></div></div>
+      <form id="settings-form">
+        <fieldset><legend>Reminder timing</legend>
+          <div class="timing-field"><label for="sit-minutes">Sitting interval <span class="unit">min</span></label>
+          <input id="sit-minutes" name="sitMinutes" type="number" min="1" max="240" step="1" required></div>
+          <div class="timing-field"><label for="stand-minutes">Standing break <span class="unit">min</span></label>
+          <input id="stand-minutes" name="standMinutes" type="number" min="1" max="60" step="1" required></div>
+        </fieldset>
+        <fieldset><legend>App behavior</legend>
+          <label class="check-row" for="start-at-login"><input id="start-at-login" name="startAtLogin" type="checkbox"><span>Run on startup</span></label>
+          <label class="check-row" for="reduced-motion"><input id="reduced-motion" name="reducedMotion" type="checkbox"><span>Reduce motion</span></label>
+          <label class="check-row" for="sound"><input id="sound" name="sound" type="checkbox"><span>Play a reminder sound</span></label>
+        </fieldset>
+        <p class="settings-note">Timing changes apply next phase.</p>
+        <div class="settings-actions"><button class="text-button" id="cancel-settings" type="button">Cancel</button><button class="primary-button compact" type="submit">Save settings</button></div>
+      </form>
+    </section>
+
+    <div class="dialog-backdrop" id="close-dialog" hidden>
+      <section class="confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="close-dialog-title" aria-describedby="close-dialog-copy" tabindex="-1">
+        <p class="eyebrow">REMINDER CONTROL</p>
+        <h2 id="close-dialog-title">Close SitStride?</h2>
+        <div class="dialog-copy" id="close-dialog-copy">
+          <p>Keep reminders running in the tray.</p>
+          <p>Quit SitStride to stop reminders.</p>
+        </div>
+        <div class="close-dialog-actions">
+          <button class="primary-button" id="keep-tray-button" type="button">Keep in system tray</button>
+          <button class="quit-button" id="quit-sitstride-button" type="button">Quit SitStride</button>
+        </div>
+      </section>
+    </div>
+
+    <footer>Runs quietly in your system tray.</footer>
+  </main>
+  <script src="renderer.js"></script>
+</body>
+</html>
