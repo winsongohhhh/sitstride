@@ -15,7 +15,17 @@ SitStride is a Windows system-tray break timer that reminds you to stand up, cha
 
 **Testing warning:** installation/uninstallation and native Windows behavior—including tray controls, sound, startup, display placement, and DPI—have not been tested on Windows. Treat this as a test candidate, not a Windows-validated production release. Node.js and npm are not needed to use the installer.
 
-## Application screenshot
+## Application screenshots
+
+These genuine SitStride 1.0.7 screenshots were captured from the running packaged Linux app. They are not evidence of native Windows testing.
+
+![SitStride 1.0.7 sitting state with Stay seated and the sitting countdown](qa/1.0.7/SitStride-sitting-runtime-1.0.7.png)
+
+**Sitting:** the countdown to your next standing break.
+
+![SitStride 1.0.7 standing state with Standing break and Back to sitting](qa/1.0.7/SitStride-standing-runtime-1.0.7.png)
+
+**Standing:** a five-minute break with a suggestion to walk 250 steps.
 
 ![SitStride 1.0.7 close dialog showing Keep in system tray and Quit SitStride](qa/1.0.7/SitStride-close-dialog-runtime-1.0.7.png)
 
