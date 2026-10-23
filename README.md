@@ -2,7 +2,24 @@
 
 SitStride is a Windows system-tray break timer that reminds you to stand up, change posture, and take a short walking break. An animated mascot accompanies a customizable sitting timer and standing-break timer, so you can keep reminders nearby without leaving the window open.
 
-**Version 1.0.7 is an unsigned test build targeting Windows 10/11 x64.** Static/source checks and packaged-Linux checks passed in the supplied QA evidence, but the installer and native Windows behavior have **not** been tested on Windows. This repository contains source and QA evidence, not a downloadable Windows installer or a published release.
+**Version 1.0.7 is an unsigned, x64-only test build targeting Windows 10/11.** Static/source checks and packaged-Linux checks passed in the supplied QA evidence, but the installer and native Windows behavior have **not** been tested on Windows. The installer is attached to the **unpublished draft v1.0.7 release** in this private repository; it is not a public download or a published release.
+
+## Install the Windows application
+
+1. **Check your system:** use 64-bit (x64) Windows 10 or 11. There is no 32-bit (x86) installer or native ARM64 build. Electron 45 does not provide a Windows x86 runtime.
+2. **Stop the old VBS reminder before installing** to avoid duplicate reminders. Stop only the reminder's script process if you can identify it. Do not blindly run the legacy `Stop_Timing.vbs`: it terminates **all** `wscript.exe` processes, including unrelated scripts.
+3. Sign in to GitHub with an account allowed to access this private repository and its draft releases. Open [Releases](https://github.com/winsongohhhh/sitstride/releases), select the draft **SitStride 1.0.7**, and download **`SitStride-Setup-1.0.7-x64.exe`** from **Assets**. If you cannot see the draft, ask the repository owner for access; the release remains unpublished.
+4. Open the downloaded `.exe` and follow the setup prompts. **The installer is unsigned**, so Windows may show a **SmartScreen** or unknown-publisher warning. Only continue if you trust this repository and the downloaded file. If SmartScreen offers **More info → Run anyway**, use it only after verifying the source; do not disable Windows security protections.
+5. Launch **SitStride** after setup, open **Settings**, and choose your sitting and standing intervals. Use **Stand up** and **Back to sitting** to change phases. The tray icon may be in Windows' hidden-icons menu.
+6. To leave reminders running, choose **Keep in system tray** in the close dialog. To stop the application, choose **Quit SitStride**.
+
+**Testing warning:** installation/uninstallation and native Windows behavior—including tray controls, sound, startup, display placement, and DPI—have not been tested on Windows. Treat this as a test candidate, not a Windows-validated production release. Node.js and npm are not needed to use the installer.
+
+## Application screenshot
+
+![SitStride 1.0.7 close dialog showing Keep in system tray and Quit SitStride](qa/1.0.7/SitStride-close-dialog-runtime-1.0.7.png)
+
+SitStride 1.0.7's close dialog, captured during packaged-Linux runtime QA. This screenshot is not evidence of native Windows testing.
 
 ## A gentle reminder to leave your chair
 
