@@ -4,7 +4,7 @@
 
 SitStride is a customizable Windows **stand up reminder**, **sitting reminder**, and **desk break reminder**. Its system-tray break timer reminds you to stand up, change posture, and take a short walking break. An animated mascot accompanies adjustable sitting and standing intervals, so you can keep reminders nearby without leaving the window open.
 
-**Version 1.0.7 is an unsigned, x64-only test build targeting Windows 10/11.** Static/source checks and packaged-Linux checks passed in the supplied QA evidence, but the installer and native Windows behavior have **not** been tested on Windows. The installer is attached to the **unpublished draft v1.0.7 release**; it is not a public download or a published release.
+**Version 1.0.7 is an unsigned, x64-only test build targeting Windows 10/11.** Static/source checks and packaged-Linux checks passed in the supplied QA evidence. The repository owner reports a successful Windows smoke test of the x64 installer; this is limited owner-reported testing, not broad Windows QA. The installer is attached to the **unpublished draft v1.0.7 release**; it is not a public download or a published release.
 
 ## Install the Windows application
 
@@ -15,11 +15,15 @@ SitStride is a customizable Windows **stand up reminder**, **sitting reminder**,
 5. Launch **SitStride** after setup, open **Settings**, and choose your sitting and standing intervals. Use **Stand up** and **Back to sitting** to change phases. The tray icon may be in Windows' hidden-icons menu.
 6. To leave reminders running, choose **Keep in system tray** in the close dialog. To stop the application, choose **Quit SitStride**.
 
-**Testing warning:** installation/uninstallation and native Windows behavior—including tray controls, sound, startup, display placement, and DPI—have not been tested on Windows. Treat this as a test candidate, not a Windows-validated production release. Node.js and npm are not needed to use the installer.
+**Testing note:** the repository owner reports that the x64 installer worked in their Windows smoke test. Broader Windows testing—including install/uninstall beyond that test setup, tray controls, sound, startup, display placement, and DPI—remains outstanding. Treat this as a test candidate, not a Windows-validated production release. Node.js and npm are not needed to use the installer.
 
-## Application screenshots
+## App demo and screenshots
 
-These genuine SitStride 1.0.7 screenshots were captured from the running packaged Linux app. They are not evidence of native Windows testing.
+The demo and genuine SitStride 1.0.7 screenshots below were captured from the running packaged Linux app; they are not Windows test evidence.
+
+![SitStride 1.0.7 showing the seated state, timed standing reminder, standing break, and return to sitting](qa/1.0.7/SitStride-reminder-flow-1.0.7.gif)
+
+**Animated demo:** captured from the packaged Linux app with one-minute sitting and standing intervals to show the full flow. This GIF is not evidence of native Windows testing.
 
 ![SitStride 1.0.7 sitting state with Stay seated and the sitting countdown](qa/1.0.7/SitStride-sitting-runtime-1.0.7.png)
 
@@ -82,7 +86,7 @@ See [draft release notes](RELEASE_NOTES_1.0.7.md) and the [original source READM
 
 ## Testing status and limitations
 
-The supplied QA covers source/static checks, timer and main-process regression tests, renderer checks, and packaged Electron behavior on Linux. It does **not** establish native Windows compatibility. Windows installation/uninstallation, tray behavior, reminder sound, startup registration, multi-monitor placement, and DPI behavior still need Windows smoke testing.
+The supplied QA covers source/static checks, timer and main-process regression tests, renderer checks, and packaged Electron behavior on Linux. Separately, the repository owner reports a successful Windows smoke test of the x64 installer. That limited owner test does **not** establish broad native Windows compatibility; further testing is needed for install/uninstall beyond that setup, tray behavior, reminder sound, startup registration, multi-monitor placement, and DPI behavior.
 
 The Windows installer is **unsigned** and may trigger SmartScreen or unknown-publisher warnings. Do not bypass warnings for a copy you do not trust. Treat 1.0.7 as a test candidate, not a Windows-validated production release.
 
