@@ -98,9 +98,6 @@ The original VBS scripts are retained only for provenance. Stop an old VBS remin
 
 Original StandUp Windows script: Copyright (c) 2026 Flora Wu, MIT License. Original scripts and notices are preserved in `original/`, and the license is retained in [app/LICENSE](app/LICENSE). The supplied project documentation states that the new application code is also MIT-licensed. Bundled app and tray artwork is in `app/assets/`.
 
-## Sponsors
-
-
 ## ☕ Support My Work
 
 If you find my projects useful, consider
