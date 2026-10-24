@@ -2,7 +2,7 @@
   "name": "sitstride-desktop",
   "version": "1.0.7",
   "description": "A gentle, animated sit-stand and walking reminder for the Windows system tray",
-  "author": "SitStride",
+  "author": "Winson Goh",
   "license": "MIT",
   "main": "app/main.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "build": {
     "appId": "com.standup.desktop",
     "productName": "SitStride",
-    "copyright": "Copyright \u00a9 2026 SitStride. Original script \u00a9 2026 Flora Wu.",
+    "copyright": "Copyright \u00a9 2026 Winson Goh. Original script \u00a9 2026 Flora Wu.",
     "asar": true,
     "directories": {
       "output": "release/1.0.7",

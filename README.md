@@ -1,15 +1,17 @@
 # SitStride — stand up reminder for Windows
 
-SitStride is a Windows system-tray break timer that reminds you to stand up, change posture, and take a short walking break. An animated mascot accompanies a customizable sitting timer and standing-break timer, so you can keep reminders nearby without leaving the window open.
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**Version 1.0.7 is an unsigned, x64-only test build targeting Windows 10/11.** Static/source checks and packaged-Linux checks passed in the supplied QA evidence, but the installer and native Windows behavior have **not** been tested on Windows. The installer is attached to the **unpublished draft v1.0.7 release** in this private repository; it is not a public download or a published release.
+SitStride is a customizable Windows **stand up reminder**, **sitting reminder**, and **desk break reminder**. Its system-tray break timer reminds you to stand up, change posture, and take a short walking break. An animated mascot accompanies adjustable sitting and standing intervals, so you can keep reminders nearby without leaving the window open.
+
+**Version 1.0.7 is an unsigned, x64-only test build targeting Windows 10/11.** Static/source checks and packaged-Linux checks passed in the supplied QA evidence, but the installer and native Windows behavior have **not** been tested on Windows. The installer is attached to the **unpublished draft v1.0.7 release**; it is not a public download or a published release.
 
 ## Install the Windows application
 
 1. **Check your system:** use 64-bit (x64) Windows 10 or 11. There is no 32-bit (x86) installer or native ARM64 build. Electron 45 does not provide a Windows x86 runtime.
 2. **Stop the old VBS reminder before installing** to avoid duplicate reminders. Stop only the reminder's script process if you can identify it. Do not blindly run the legacy `Stop_Timing.vbs`: it terminates **all** `wscript.exe` processes, including unrelated scripts.
-3. Sign in to GitHub with an account allowed to access this private repository and its draft releases. Open [Releases](https://github.com/winsongohhhh/sitstride/releases), select the draft **SitStride 1.0.7**, and download **`SitStride-Setup-1.0.7-x64.exe`** from **Assets**. If you cannot see the draft, ask the repository owner for access; the release remains unpublished.
-4. Open the downloaded `.exe` and follow the setup prompts. **The installer is unsigned**, so Windows may show a **SmartScreen** or unknown-publisher warning. Only continue if you trust this repository and the downloaded file. If SmartScreen offers **More info → Run anyway**, use it only after verifying the source; do not disable Windows security protections.
+3. Open [Releases](https://github.com/winsongohhhh/sitstride/releases), select the draft **SitStride 1.0.7**, and download **`SitStride-Setup-1.0.7-x64.exe`** from **Assets**. If the draft is not visible to your GitHub account, ask the repository owner for access; the release remains unpublished.
+4. Open the downloaded `.exe` and follow the setup prompts. **The installer is unsigned**, so Windows may show a **SmartScreen** or unknown-publisher warning. Only continue if you trust the repository and the downloaded file. If SmartScreen offers **More info → Run anyway**, use it only after verifying the source; do not disable Windows security protections.
 5. Launch **SitStride** after setup, open **Settings**, and choose your sitting and standing intervals. Use **Stand up** and **Back to sitting** to change phases. The tray icon may be in Windows' hidden-icons menu.
 6. To leave reminders running, choose **Keep in system tray** in the close dialog. To stop the application, choose **Quit SitStride**.
 
@@ -84,23 +86,24 @@ The supplied QA covers source/static checks, timer and main-process regression t
 
 The Windows installer is **unsigned** and may trigger SmartScreen or unknown-publisher warnings. Do not bypass warnings for a copy you do not trust. Treat 1.0.7 as a test candidate, not a Windows-validated production release.
 
-The original VBS scripts are retained only for provenance. Stop an old VBS reminder before trying SitStride to avoid duplicate reminders. SitStride does not run `Stop_Timing.vbs`; that legacy script terminates all `wscript.exe` processes.
+The legacy VBS scripts are not included in this repository. Stop an old VBS reminder before trying SitStride to avoid duplicate reminders. SitStride does not run `Stop_Timing.vbs`; that legacy script terminates all `wscript.exe` processes.
 
 ## Project layout
 
 - `app/`: Electron main process, timer, renderer, and bundled assets.
+- `app/LICENSE`: original StandUp script license notice.
 - `tests/`: automated timer and main-process tests.
 - `qa/`: supplied versioned QA evidence and test helpers; some reference the original build environment and are not portable commands.
-- `original/`: original StandUp Windows scripts and license.
 - `docs/README-source-1.0.7.md`: unchanged documentation from the source ZIP; referenced release artifacts are not necessarily included here.
 
-## Credits and license
+## License and credits
 
-Original StandUp Windows script: Copyright (c) 2026 Flora Wu, MIT License. Original scripts and notices are preserved in `original/`, and the license is retained in [app/LICENSE](app/LICENSE). The supplied project documentation states that the new application code is also MIT-licensed. Bundled app and tray artwork is in `app/assets/`.
+The SitStride application code is licensed under the MIT License. Copyright (c) 2026 Winson Goh. See the repository-root [LICENSE](LICENSE).
 
-## ☕ Support My Work
+The original StandUp Windows script was Copyright (c) 2026 Flora Wu and is MIT-licensed; its license notice is retained in [app/LICENSE](app/LICENSE). The original script source files are not included in this repository. Bundled app and tray artwork is in `app/assets/`.
 
-If you find my projects useful, consider
-supporting their development!
+## Support SitStride
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20My%20Work-FF5E5B?logo=ko-fi&logoColor=white)]([https://ko-fi.com/winsongohhhh])
+If SitStride is useful to you, you can support its development on Ko-fi:
+
+[![Support SitStride on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20SitStride-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/winsongohhhh)
