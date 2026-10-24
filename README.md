@@ -103,5 +103,4 @@ Original StandUp Windows script: Copyright (c) 2026 Flora Wu, MIT License. Origi
 If you find my projects useful, consider
 supporting their development!
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20My%20Work-FF5E5B?logo=ko-fi&logoColor=white)]([https://ko-fi.com/winsongohhhh]))
-
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20My%20Work-FF5E5B?logo=ko-fi&logoColor=white)]([https://ko-fi.com/winsongohhhh])
